@@ -1,0 +1,13 @@
+{
+  "azuget": 1,
+  "generated": "2026-10-23T22:10:14Z",
+  "project": "laivy",
+  "versions": [
+    {
+      "channel": "stable",
+      "manifest": "releases/1.2.1.json",
+      "published": "2026-10-23T22:10:11Z",
+      "version": "1.2.1"
+    }
+  ]
+}

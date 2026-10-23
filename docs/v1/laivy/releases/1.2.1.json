@@ -1,0 +1,23 @@
+{
+  "assets": [
+    {
+      "kind": "full",
+      "name": "laivy-1.2.1-setup.exe",
+      "platform": "windows-x64",
+      "sha256": "eca3f5ada70de7f4dbb0ab490c7a53c659e34ff0f19e579e0d04a87ea4b03e1e",
+      "size": 62023738,
+      "urls": [
+        "http://omnipi-pi4.local/v1/laivy/files/1.2.1/laivy-1.2.1-setup.exe"
+      ]
+    }
+  ],
+  "azuget": 1,
+  "channel": "stable",
+  "min_launcher": null,
+  "name": "Laïvy",
+  "notes": "Laïvy 1.2.1\n- Correctif : la clé des panneaux Nanoleaf se lit aussi depuis le Gestionnaire d'identification de Windows, et un refus d'accès des panneaux est signalé comme tel.\n- Rappel de la 1.2.0 : six langues (anglais, français, allemand, espagnol, portugais, slovaque), mises à jour signées vérifiées au lancement, arrêt réel des missions du module.\n",
+  "notes_url": null,
+  "project": "laivy",
+  "published": "2026-10-23T22:10:11Z",
+  "version": "1.2.1"
+}

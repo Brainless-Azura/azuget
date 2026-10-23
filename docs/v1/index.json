@@ -1,6 +1,6 @@
 {
   "azuget": 1,
-  "generated": "2026-10-23T18:47:38Z",
+  "generated": "2026-10-23T22:10:14Z",
   "projects": [
     {
       "channel": "stable",
@@ -9,6 +9,14 @@
       "name": "AzuGet - projet de démonstration",
       "published": "2026-10-23T18:47:32Z",
       "version": "0.1.2"
+    },
+    {
+      "channel": "stable",
+      "id": "laivy",
+      "manifest": "laivy/latest.json",
+      "name": "Laïvy",
+      "published": "2026-10-23T22:10:11Z",
+      "version": "1.2.1"
     }
   ]
 }

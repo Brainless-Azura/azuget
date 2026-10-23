@@ -1,0 +1,23 @@
+{
+  "assets": [
+    {
+      "kind": "full",
+      "name": "azuget-demo-0.1.0-windows-x64.zip",
+      "platform": "windows-x64",
+      "sha256": "cfd36763aa33362971962bfbbc8ff6ad94f4e64eda204b85645460e743947270",
+      "size": 546,
+      "urls": [
+        "http://omnipi-pi4.local/v1/azuget-demo/files/0.1.0/azuget-demo-0.1.0-windows-x64.zip"
+      ]
+    }
+  ],
+  "azuget": 1,
+  "channel": "stable",
+  "min_launcher": null,
+  "name": "AzuGet - projet de démonstration",
+  "notes": "Première version de démonstration : prouve la chaîne publication signée -> hub Pi 4 -> miroir Pi 3 -> lanceur.",
+  "notes_url": null,
+  "project": "azuget-demo",
+  "published": "2026-10-23T18:29:10Z",
+  "version": "0.1.0"
+}

@@ -1,0 +1,12 @@
+{
+  "azuget": 1,
+  "generated": "2026-10-23T18:25:30Z",
+  "keys": [
+    {
+      "key_id": "1d7f8d4df56c906a",
+      "pubkey": "4f2cd390551c4d8ada264e9ca65da96f737be289a6fedbf5c655658f5cd7744f",
+      "since": "2026-10-23T18:25:30Z",
+      "status": "active"
+    }
+  ]
+}

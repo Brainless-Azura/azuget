@@ -1,0 +1,8 @@
+# comptes rendus de déploiement (restent sur le PC)
+RAPPORT_*.md
+# fichiers binaires en miroir : seulement sur les Pi, jamais dans git
+docs/v1/*/files/
+demo/build/
+*.part
+__pycache__/
+.venv/

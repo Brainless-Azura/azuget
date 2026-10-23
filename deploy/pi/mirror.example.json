@@ -1,0 +1,14 @@
+{
+  "source": "__SOURCE__",
+  "branch": "main",
+  "feed_subdir": "docs",
+  "dest": "/srv/azuget",
+  "state_dir": "/var/lib/azuget",
+  "inbox": "/srv/azuget-inbox",
+  "pubkeys": ["__PUBKEY__"],
+  "keep_versions": 3,
+  "max_asset_mb": 4096,
+  "min_free_mb": 1024,
+  "public_base": "__PUBLIC_BASE__",
+  "peers": [__PEERS__]
+}

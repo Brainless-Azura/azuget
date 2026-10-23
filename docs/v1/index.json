@@ -1,0 +1,14 @@
+{
+  "azuget": 1,
+  "generated": "2026-10-23T18:47:38Z",
+  "projects": [
+    {
+      "channel": "stable",
+      "id": "azuget-demo",
+      "manifest": "azuget-demo/latest.json",
+      "name": "AzuGet - projet de démonstration",
+      "published": "2026-10-23T18:47:32Z",
+      "version": "0.1.2"
+    }
+  ]
+}

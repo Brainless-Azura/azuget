@@ -1,0 +1,25 @@
+{
+  "azuget": 1,
+  "generated": "2026-10-23T18:47:38Z",
+  "project": "azuget-demo",
+  "versions": [
+    {
+      "channel": "stable",
+      "manifest": "releases/0.1.2.json",
+      "published": "2026-10-23T18:47:32Z",
+      "version": "0.1.2"
+    },
+    {
+      "channel": "stable",
+      "manifest": "releases/0.1.1.json",
+      "published": "2026-10-23T18:32:39Z",
+      "version": "0.1.1"
+    },
+    {
+      "channel": "stable",
+      "manifest": "releases/0.1.0.json",
+      "published": "2026-10-23T18:29:10Z",
+      "version": "0.1.0"
+    }
+  ]
+}

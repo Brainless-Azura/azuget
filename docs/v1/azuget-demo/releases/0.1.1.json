@@ -1,0 +1,23 @@
+{
+  "assets": [
+    {
+      "kind": "full",
+      "name": "azuget-demo-0.1.1-windows-x64.zip",
+      "platform": "windows-x64",
+      "sha256": "88079f0d0eb0964e55e342729ab25996ba6cbf91b24d146adb5383776d25ea4e",
+      "size": 3147325,
+      "urls": [
+        "http://omnipi-pi4.local/v1/azuget-demo/files/0.1.1/azuget-demo-0.1.1-windows-x64.zip"
+      ]
+    }
+  ],
+  "azuget": 1,
+  "channel": "stable",
+  "min_launcher": null,
+  "name": "AzuGet - projet de démonstration",
+  "notes": "Deuxième version : lest de 3 Mo pour mesurer un vrai transfert Pi 4 -> Pi 3.",
+  "notes_url": null,
+  "project": "azuget-demo",
+  "published": "2026-10-23T18:32:39Z",
+  "version": "0.1.1"
+}

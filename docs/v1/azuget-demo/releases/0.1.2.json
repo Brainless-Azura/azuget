@@ -1,0 +1,24 @@
+{
+  "assets": [
+    {
+      "kind": "full",
+      "name": "azuget-demo-0.1.2-windows-x64.zip",
+      "platform": "windows-x64",
+      "sha256": "0b2238b637191f7b85993c76384a2d0ed080fac2827ad842f77e4b353e553907",
+      "size": 5245118,
+      "urls": [
+        "https://github.com/Brainless-Azura/azuget/releases/download/azuget-demo-v0.1.2/azuget-demo-0.1.2-windows-x64.zip",
+        "http://omnipi-pi4.local/v1/azuget-demo/files/0.1.2/azuget-demo-0.1.2-windows-x64.zip"
+      ]
+    }
+  ],
+  "azuget": 1,
+  "channel": "stable",
+  "min_launcher": null,
+  "name": "AzuGet - projet de démonstration",
+  "notes": "Troisième version : première publiée dans une GitHub Release en plus du Pi 4. Lest de 5 Mo.",
+  "notes_url": null,
+  "project": "azuget-demo",
+  "published": "2026-10-23T18:47:32Z",
+  "version": "0.1.2"
+}

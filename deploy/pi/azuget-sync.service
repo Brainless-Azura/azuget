@@ -1,0 +1,20 @@
+[Unit]
+Description=AzuGet : synchronisation du miroir
+After=network-online.target nginx.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=azuget
+Group=azuget
+Environment=HOME=/var/lib/azuget
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /usr/local/lib/azuget/azuget.py mirror --config /etc/azuget/mirror.json
+TimeoutStartSec=2h
+Nice=10
+IOSchedulingClass=idle
+ProtectSystem=full
+ProtectHome=yes
+PrivateTmp=yes
+NoNewPrivileges=yes
+ReadWritePaths=/srv/azuget /srv/azuget-inbox /var/lib/azuget

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AzuGet</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --bg: #fafafa; --muted: #6b6b70; --line: #e2e2e6; --accent: #2456c7; --card: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #ececf0; --bg: #141418; --muted: #9a9aa3; --line: #2c2c33; --accent: #7aa2ff; --card: #1d1d23; } }
+  body { margin: 0; padding: 0 16px 48px; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--fg); background: var(--bg); }
+  main { max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 2rem; margin: 40px 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: .03em; }
+  code { font: 0.9em ui-monospace, Consolas, monospace; background: color-mix(in srgb, var(--fg) 7%, transparent); padding: 1px 5px; border-radius: 4px; }
+  a { color: var(--accent); }
+  .ok { color: #1f8f4e; } .ko { color: #c73a3a; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>AzuGet</h1>
+  <p class="sub">Flux de mises à jour signées pour les projets d'Azura. Les lanceurs lisent <code>v1/&lt;projet&gt;/latest.json</code>, vérifient sa signature Ed25519, puis téléchargent les fichiers dont le SHA-256 est annoncé.</p>
+
+  <div class="card">
+    <table>
+      <thead><tr><th>Projet</th><th>Version</th><th>Canal</th><th>Publiée le</th><th>Manifeste</th></tr></thead>
+      <tbody id="projects"><tr><td colspan="5" class="muted">chargement de <code>v1/index.json</code>…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="card" id="status" hidden>
+    <strong>Ce miroir</strong> : <span id="status-text"></span>
+    <div id="peers" class="muted"></div>
+  </div>
+
+  <p class="muted">Points d'entrée : <a href="v1/index.json">v1/index.json</a> · <a href="v1/keys.json">v1/keys.json</a> · <a href="status.json">status.json</a> (miroirs seulement) · <a href="health">health</a></p>
+</main>
+<script>
+(async function () {
+  const tb = document.getElementById('projects');
+  try {
+    const r = await fetch('v1/index.json', { cache: 'no-cache' });
+    const idx = await r.json();
+    tb.innerHTML = '';
+    if (!idx.projects || !idx.projects.length) {
+      tb.innerHTML = '<tr><td colspan="5" class="muted">aucun projet publié pour l\'instant</td></tr>';
+    }
+    for (const p of idx.projects || []) {
+      const tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + esc(p.name || p.id) + ' <span class="muted">(' + esc(p.id) + ')</span></td><td>' + esc(p.version) + '</td><td>' + esc(p.channel) + '</td><td>' + esc(p.published) + '</td><td><a href="v1/' + encodeURIComponent(p.id) + '/latest.json">latest.json</a> · <a href="v1/' + encodeURIComponent(p.id) + '/versions.json">historique</a></td>';
+      tb.appendChild(tr);
+    }
+  } catch (e) {
+    tb.innerHTML = '<tr><td colspan="5" class="ko">index illisible : ' + esc(String(e)) + '</td></tr>';
+  }
+  try {
+    const r = await fetch('status.json', { cache: 'no-cache' });
+    if (r.ok) {
+      const st = await r.json();
+      document.getElementById('status').hidden = false;
+      document.getElementById('status-text').innerHTML = esc(st.host) + ', synchronisé le ' + esc(st.time) + ' : <span class="' + (st.ok ? 'ok' : 'ko') + '">' + (st.ok ? 'OK' : (st.errors || []).length + ' erreur(s)') + '</span>, ' + esc(String(st.disk_free_mb)) + ' Mo libres';
+      const peers = Object.entries(st.peers || {}).map(([u, p]) => esc(u) + ' : ' + (p.ok ? '<span class="ok">joignable</span>' : '<span class="ko">injoignable</span>'));
+      document.getElementById('peers').innerHTML = peers.length ? 'Autres miroirs : ' + peers.join(' · ') : '';
+    }
+  } catch (e) { /* flux statique sans status.json */ }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+})();
+</script>
+</body>
+</html>

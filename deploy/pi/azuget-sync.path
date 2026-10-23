@@ -1,0 +1,9 @@
+[Unit]
+Description=AzuGet : synchronisation dès qu'une publication arrive dans le dépôt central
+
+[Path]
+PathChanged=/srv/git/azuget.git/info/refs
+Unit=azuget-sync.service
+
+[Install]
+WantedBy=multi-user.target

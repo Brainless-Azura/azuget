@@ -1,0 +1,11 @@
+[Unit]
+Description=AzuGet : synchronisation périodique du miroir
+
+[Timer]
+OnBootSec=90s
+OnUnitActiveSec=__TIMER__
+RandomizedDelaySec=20s
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -6,3 +6,4 @@ demo/build/
 *.part
 __pycache__/
 .venv/
+BRIEFING_*.md

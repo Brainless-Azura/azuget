@@ -1,0 +1,6 @@
+{
+  "alg": "ed25519",
+  "azuget_sig": 1,
+  "key_id": "1d7f8d4df56c906a",
+  "sig": "8506726fdf5e80ac6be253d7bc324520b563ffb3f072e6d4fa96abd57d05a63bc8c26420315545a09cb30d0c369da6746b2f1ee95093d99648c836a08d06c302"
+}

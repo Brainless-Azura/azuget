@@ -1,0 +1,23 @@
+{
+  "assets": [
+    {
+      "kind": "installer",
+      "name": "Darkstone_MiseAJour_0.8.14.exe",
+      "platform": "windows-x64",
+      "sha256": "167b17e2db3652a36af6ad88468dfb2640aaed50ab27a3cf366a59f64d7b9153",
+      "size": 32432014,
+      "urls": [
+        "https://github.com/Brainless-Azura/azuget/releases/download/darkstone-v0.8.14/Darkstone_MiseAJour_0.8.14.exe"
+      ]
+    }
+  ],
+  "azuget": 1,
+  "channel": "stable",
+  "min_launcher": null,
+  "name": "Darkstone (portage PC)",
+  "notes": "Héros HD : les textures de la version PC, agrandies par un réseau de neurones ; les héros sont éclairés et lissés (onglet Effets, DirectX 12).\nÉquipements visibles : armes, boucliers et torche de la version PC, y compris les armes du correctif 1.0.5. Les arcs ne sont pas encore montrés. Le réglage reste coupé par défaut (onglet Jeu).\nLes boucliers montrent leur peinture, de face et sans rayures.\n",
+  "notes_url": null,
+  "project": "darkstone",
+  "published": "2026-10-24T05:53:35Z",
+  "version": "0.8.14"
+}

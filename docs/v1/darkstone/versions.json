@@ -1,8 +1,14 @@
 {
   "azuget": 1,
-  "generated": "2026-10-24T05:53:42Z",
+  "generated": "2026-10-24T08:42:39Z",
   "project": "darkstone",
   "versions": [
+    {
+      "channel": "stable",
+      "manifest": "releases/0.8.15.json",
+      "published": "2026-10-24T08:42:33Z",
+      "version": "0.8.15"
+    },
     {
       "channel": "stable",
       "manifest": "releases/0.8.14.json",

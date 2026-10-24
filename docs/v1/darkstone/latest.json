@@ -2,12 +2,12 @@
   "assets": [
     {
       "kind": "installer",
-      "name": "Darkstone_MiseAJour_0.8.15.exe",
+      "name": "Darkstone_MiseAJour_0.8.16.exe",
       "platform": "windows-x64",
-      "sha256": "5b65a2baa8a42a59b1c2b98c7bc38a24eea92c6ab31cfefdd051269274dc7ade",
-      "size": 32435040,
+      "sha256": "3d052b4b4cfd00dfb617b9ca9b9c09601cb297b4beb6eef51177702edc15a8b7",
+      "size": 32445681,
       "urls": [
-        "https://github.com/Brainless-Azura/azuget/releases/download/darkstone-v0.8.15/Darkstone_MiseAJour_0.8.15.exe"
+        "https://github.com/Brainless-Azura/azuget/releases/download/darkstone-v0.8.16/Darkstone_MiseAJour_0.8.16.exe"
       ]
     }
   ],
@@ -15,9 +15,9 @@
   "channel": "stable",
   "min_launcher": null,
   "name": "Darkstone (portage PC)",
-  "notes": "Les combats s'entendent caméra dézoomée au maximum : les bruits gardent le volume du plus grand recul de la console, et la stéréo suit toujours leur place à l'écran.\n",
+  "notes": "Le lanceur ne se fige plus quand on le déplace par sa barre de titre, et ne bloque plus les clics sur le bureau.\nAprès une mise à jour, le bouton « Relancer » (flèche en cercle) remplace « Jouer » : le lanceur redémarre proprement, puis propose de jouer.\n",
   "notes_url": null,
   "project": "darkstone",
-  "published": "2026-10-24T08:42:33Z",
-  "version": "0.8.15"
+  "published": "2026-10-24T09:40:04Z",
+  "version": "0.8.16"
 }

@@ -2,12 +2,12 @@
   "assets": [
     {
       "kind": "installer",
-      "name": "Darkstone_MiseAJour_0.8.17.exe",
+      "name": "Darkstone_MiseAJour_0.8.18.exe",
       "platform": "windows-x64",
-      "sha256": "71f888b6ae6ab711734bf8261ee85440c33680cd3109ec2e8e45337ce0bf7e47",
-      "size": 32453885,
+      "sha256": "f3df18ac7d2861b505f3a20f7bf95a7e9db6cc776d71b26bca17f713359d6a50",
+      "size": 32462076,
       "urls": [
-        "https://github.com/Brainless-Azura/azuget/releases/download/darkstone-v0.8.17/Darkstone_MiseAJour_0.8.17.exe"
+        "https://github.com/Brainless-Azura/azuget/releases/download/darkstone-v0.8.18/Darkstone_MiseAJour_0.8.18.exe"
       ]
     }
   ],
@@ -15,9 +15,9 @@
   "channel": "stable",
   "min_launcher": null,
   "name": "Darkstone (portage PC)",
-  "notes": "Les icônes des bonus actifs reviennent dans leurs cases, sous la fenêtre de quête, au lieu de la recouvrir ; en 16:9, les icônes des sorts et de la ceinture suivent aussi leurs cadres.\nRappel de sauvegarde : le jeu ne sauvegarde pas tout seul. Après 20 minutes de jeu sans sauvegarde, une petite phrase rouge le rappelle quelques secondes en bas à droite de l'écran, dans la langue du jeu (réglage « Rappel de sauvegarde », onglet Jeu des options).\n",
+  "notes": "Rappel de sauvegarde : il revient vraiment toutes les 20 minutes de jeu. Son horloge tourne maintenant en permanence (ville, niveaux, menus, chargements) au lieu de repartir à zéro à chaque sauvegarde.\nLa phrase s'affiche par-dessus tout, en bas à droite, même pendant les chargements et dans les menus.\n",
   "notes_url": null,
   "project": "darkstone",
-  "published": "2026-10-24T12:55:50Z",
-  "version": "0.8.17"
+  "published": "2026-10-24T14:14:22Z",
+  "version": "0.8.18"
 }

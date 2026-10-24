@@ -2,12 +2,12 @@
   "assets": [
     {
       "kind": "installer",
-      "name": "Darkstone_MiseAJour_0.8.16.exe",
+      "name": "Darkstone_MiseAJour_0.8.17.exe",
       "platform": "windows-x64",
-      "sha256": "3d052b4b4cfd00dfb617b9ca9b9c09601cb297b4beb6eef51177702edc15a8b7",
-      "size": 32445681,
+      "sha256": "71f888b6ae6ab711734bf8261ee85440c33680cd3109ec2e8e45337ce0bf7e47",
+      "size": 32453885,
       "urls": [
-        "https://github.com/Brainless-Azura/azuget/releases/download/darkstone-v0.8.16/Darkstone_MiseAJour_0.8.16.exe"
+        "https://github.com/Brainless-Azura/azuget/releases/download/darkstone-v0.8.17/Darkstone_MiseAJour_0.8.17.exe"
       ]
     }
   ],
@@ -15,9 +15,9 @@
   "channel": "stable",
   "min_launcher": null,
   "name": "Darkstone (portage PC)",
-  "notes": "Le lanceur ne se fige plus quand on le déplace par sa barre de titre, et ne bloque plus les clics sur le bureau.\nAprès une mise à jour, le bouton « Relancer » (flèche en cercle) remplace « Jouer » : le lanceur redémarre proprement, puis propose de jouer.\n",
+  "notes": "Les icônes des bonus actifs reviennent dans leurs cases, sous la fenêtre de quête, au lieu de la recouvrir ; en 16:9, les icônes des sorts et de la ceinture suivent aussi leurs cadres.\nRappel de sauvegarde : le jeu ne sauvegarde pas tout seul. Après 20 minutes de jeu sans sauvegarde, une petite phrase rouge le rappelle quelques secondes en bas à droite de l'écran, dans la langue du jeu (réglage « Rappel de sauvegarde », onglet Jeu des options).\n",
   "notes_url": null,
   "project": "darkstone",
-  "published": "2026-10-24T09:40:04Z",
-  "version": "0.8.16"
+  "published": "2026-10-24T12:55:50Z",
+  "version": "0.8.17"
 }

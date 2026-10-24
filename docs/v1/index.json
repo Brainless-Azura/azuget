@@ -1,6 +1,6 @@
 {
   "azuget": 1,
-  "generated": "2026-10-24T09:40:12Z",
+  "generated": "2026-10-24T12:55:58Z",
   "projects": [
     {
       "channel": "stable",
@@ -15,8 +15,8 @@
       "id": "darkstone",
       "manifest": "darkstone/latest.json",
       "name": "Darkstone (portage PC)",
-      "published": "2026-10-24T09:40:04Z",
-      "version": "0.8.16"
+      "published": "2026-10-24T12:55:50Z",
+      "version": "0.8.17"
     },
     {
       "channel": "stable",
